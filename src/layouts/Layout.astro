@@ -14,7 +14,7 @@ const { title } = Astro.props as {
     lang="en"
 >
     <head>
-        <Metas title={title} description={SITE_DESCRIPTION} />
+        <Metas title={`${title}`} description={`${SITE_DESCRIPTION}`} />
     </head>
     <body class="relative bg-gray">
         <Header />

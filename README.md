@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a13e9016-04a9-4f4c-bbe2-441440384eb5/deploy-status)](https://app.netlify.com/sites/mdnw-snack-company/deploys)
+
 # MDNW Snack Company 🍫
 
 ¡Bienvenido al repositorio de la página web de MDNW Snack Company!
