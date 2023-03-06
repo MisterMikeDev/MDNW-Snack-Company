@@ -1,0 +1,67 @@
+---
+export interface Props {
+    title: string;
+    description: string;
+}
+const { title, description } = Astro.props;
+---
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="icon" type="image/svg+xml" href="/Cupcake.png" />
+<meta name="robots" content="index, follow" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="language" content="Spanish" />
+<meta name="author" content="MrMikeDev" />
+<title>{title}</title>
+<meta name="title" content={title} />
+<meta name="description" content={description} />
+<meta property="og:type" content="website" />
+<meta property="og:url" content={Astro.url} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={Astro.url} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />
+<meta property="pinterest:type" content="website" />
+<meta property="pinterest:title" content={title} />
+<meta property="pinterest:description" content={description} />
+<meta property="pinterest:image:width" content="1200" />
+<meta property="pinterest:image:height" content="628" />
+<meta property="pinterest:url" content={Astro.url} />
+<meta property="pinterest:site_name" content={title} />
+<meta name="pinterest" content="nopin" />
+<meta property="linkedin:type" content="website" />
+<meta property="linkedin:title" content={title} />
+<meta property="linkedin:description" content={description} />
+<meta property="linkedin:image:width" content="1200" />
+<meta property="linkedin:image:height" content="628" />
+<meta property="linkedin:url" content={Astro.url} />
+<meta property="linkedin:site_name" content={title} />
+<meta property="discord:site_name" content={title} />
+<meta property="discord:type" content="website" />
+<meta property="discord:title" content={title} />
+<meta property="discord:description" content={description} />
+<meta property="discord:image:width" content="1200" />
+<meta property="discord:image:height" content="630" />
+<meta property="discord:url" content={Astro.url} />
+<meta property="discord:locale" content="es_MX" />
+<meta property="twitter:url" content="https://twitter.com/MrMike_Official" />
+<meta property="github:url" content="https://github.com/MisterMikeDev" />
+<meta
+    property="stackoverflow:url"
+    content="https://www.stackoverflow.com/users/17969063/mrmikedev"
+/>
+<meta
+    property="linkedin:url"
+    content="https://www.linkedin.com/in/diego-emmanuel-rodriguez-ruvalcaba-626259237"
+/>
+<meta
+    name="keywords"
+    content="Microempresa, Snack, MDNW, Company, Diego, Williams, Melanie, Noe, Cobaej"
+/>
+<link
+    href="https://fonts.googleapis.com/css2?family=Lobster:wght@400&display=swap"
+    rel="stylesheet"
+/>

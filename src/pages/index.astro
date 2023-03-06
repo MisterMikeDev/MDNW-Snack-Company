@@ -1,0 +1,127 @@
+---
+import { SITE_TITLE, MEMBERS } from "../consts";
+import Layout from "../layouts/Layout.astro";
+import MemberCard from "@/MemberCard.astro";
+import Separation from "@/Separation.astro";
+import MiniSeparation from "@/MiniSeparation.astro";
+---
+
+<Layout title={`${SITE_TITLE}`}>
+    <header
+        class="flex flex-col flex-wrap items-center justify-center gap-5 transition-all [transition-duration:300ms;] md:flex-row"
+    >
+        <section>
+            <img
+                class="mt-5 rounded-full object-cover object-center"
+                src="/MainLogo.png"
+                alt="Logo"
+            />
+        </section>
+        <section>
+            <h1
+                class="text-center font-cursive text-[4rem] font-semibold text-pastel-purple"
+            >
+                MDNW Snack Company
+            </h1>
+            <h4 class="text-center font-cursive text-2xl text-dark">
+                Alimentando tu cuerpo y mente.
+            </h4>
+        </section>
+    </header>
+    <Separation />
+    <section id="home">
+        <h3 class="my-4 text-center font-cursive text-4xl text-pastel-pink">
+            ¿Quienes somos?
+        </h3>
+        <p class="px-5 text-center md:px-36">
+            MDNW Snack Company es una micro empresa creada por los alumonos
+            Melanie, Diego, Noe y Willimas del grupo 6-C con el objetivo de
+            cumplir con nuestro proyecto de la materia de Administración II.
+        </p>
+        <MiniSeparation />
+        <h4 class="my-4 text-center font-cursive text-4xl text-pastel-pink">
+            ¿Qué hace especial a MDNW Snack Company?
+        </h4>
+        <p class="px-5 text-center md:px-36">
+            En MDNW Snack Company, nos esforzamos por ofrecer opciones
+            saludables y deliciosas de snacks para personas activas y en
+            movimiento. Nos diferenciamos de otras compañías de barritas
+            energéticas por nuestro compromiso con la calidad y los ingredientes
+            naturales. Además, nuestras barras energéticas SnackFit están
+            especialmente diseñadas para personas que van al gimnasio, con un
+            alto contenido de proteínas y un bajo contenido de grasas y
+            carbohidratos. Creemos que nuestra combinación única de ingredientes
+            naturales y nuestro compromiso con la salud y la nutrición nos hacen
+            especiales en el mercado de snacks saludables. En resumen, MDNW
+            Snack Company se enfoca en alimentar tu cuerpo y mente de manera
+            saludable y deliciosa.
+        </p>
+        <MiniSeparation />
+        <h4 class="my-4 text-center font-cursive text-4xl text-pastel-pink">
+            ¿Cuál es la historia detrás de MDNW Snack Company?
+        </h4>
+        <p class="px-5 text-center md:px-36">
+            MDNW Snack Company fue creada por un grupo de estudiantes como parte
+            de un proyecto escolar. El objetivo era crear una microempresa que
+            ofreciera opciones saludables y deliciosas de snacks para personas
+            activas y en movimiento. Después de hacer investigación y pruebas de
+            mercado, se decidió crear SnackFit, una barra energética dirigida
+            específicamente a personas que van al gimnasio.
+        </p>
+        <MiniSeparation />
+        <h4 class="my-4 text-center font-cursive text-4xl text-pastel-pink">
+            ¿Qué diferencia a MDNW Snack Company de otras compañias de barritas
+            energéticas?
+        </h4>
+        <p class="px-5 text-center md:px-36">
+            En MDNW Snack Company, nos esforzamos por ofrecer opciones
+            saludables y deliciosas de snacks para personas activas y en
+            movimiento. Nos diferenciamos de otras compañías de barritas
+            energéticas por nuestro compromiso con la calidad y los ingredientes
+            naturales. Además, nuestras barras energéticas SnackFit están
+            especialmente diseñadas para personas que van al gimnasio, con un
+            alto contenido de proteínas y un bajo contenido de grasas y
+            carbohidratos. Creemos que nuestras barras energéticas son una
+            excelente opción para ayudarte a alcanzar tus objetivos de
+            entrenamiento y mantenerte saludable y en forma.
+        </p>
+    </section>
+    <Separation />
+    <section id="productos">
+        <h3 class="my-4 text-center font-cursive text-4xl text-pastel-pink">
+            Nuestros productos:
+        </h3>
+        <p class="text-center text-lg font-semibold">
+            Nuestro unico producto de momento es...
+        </p>
+        <article
+            class="-z-10 mx-auto my-5 grid w-64 place-content-center rounded-3xl border-4 border-dark bg-gradient-to-t from-pastel-purple to-pastel-pink p-5 transition hover:shadow-2xl"
+        >
+            <h1 class="flex flex-col text-center text-lg font-bold text-white">
+                SnackFit
+            </h1>
+            <img
+                class="my-2 h-24 w-24 rounded-full border-4 border-dark object-cover object-center"
+                src="https://www.revistavidafitness.com/wp-content/uploads/2023/01/SNACK-FIT-.jpg"
+                alt="SnackFit"
+            />
+            <a
+                class="rounded-2xl border-2 border-dark bg-white px-3 py-1 text-center font-bold"
+                href="/snackfit">Visitar</a
+            >
+        </article>
+    </section>
+    <Separation />
+    <section id="integrantes">
+        <h3 class="my-4 text-center font-cursive text-4xl text-pastel-pink">
+            Integrantes:
+        </h3>
+        <ul class="mx-auto my-2 grid text-dark md:w-1/2 lg:grid-cols-2">
+            {
+                MEMBERS.map(({ image, name }) => {
+                    return <MemberCard image={image} name={name} />;
+                })
+            }
+        </ul>
+    </section>
+</Layout>

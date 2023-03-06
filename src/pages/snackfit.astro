@@ -1,0 +1,86 @@
+---
+import { SITE_TITLE } from "../consts";
+import Layout from "../layouts/Layout.astro";
+import Separation from "@/Separation.astro";
+import MiniSeparation from "@/MiniSeparation.astro";
+---
+
+<Layout title={`${SITE_TITLE} | SnackFit`}>
+    <main class="container mx-auto my-10 px-4">
+        <h1 class="my-8 text-center font-cursive text-5xl text-pastel-pink">
+            SnackFit
+        </h1>
+        <Separation />
+        <div class="flex flex-col md:flex-row md:space-x-12">
+            <div class="w-full md:w-1/2">
+                <img
+                    src="/SnackFitBars.jpg"
+                    alt="Imagen de SnackFit"
+                    class="aspect-video w-full rounded-lg object-cover object-center shadow-lg md:aspect-auto md:object-contain"
+                />
+            </div>
+            <div class="mt-10 w-full text-center md:mt-0 md:w-1/2">
+                <h2
+                    class="mb-6 font-cursive text-3xl font-bold text-pastel-pink"
+                >
+                    Descripción del producto:
+                </h2>
+                <p class="px-5 text-justify leading-7 md:px-36">
+                    SnackFit es una barra energética especialmente diseñada para
+                    personas que van al gimnasio. Con un alto contenido de
+                    proteínas y un bajo contenido de grasas y carbohidratos,
+                    SnackFit es el snack perfecto para ayudarte a alcanzar tus
+                    objetivos de entrenamiento y mantenerte saludable y en
+                    forma.
+                </p>
+                <MiniSeparation />
+                <h2
+                    class="mt-10 mb-6 text-center font-cursive text-3xl font-bold text-pastel-pink"
+                >
+                    Ingredientes:
+                </h2>
+                <ul class="list-disc px-20 text-justify leading-7 md:px-36">
+                    <li>Avena.</li>
+                    <li>Frutos secos.</li>
+                    <li>Miel.</li>
+                </ul>
+                <MiniSeparation />
+                <h2
+                    class="mt-10 mb-6 text-center font-cursive text-3xl font-bold text-pastel-pink"
+                >
+                    Beneficios:
+                </h2>
+                <ul class="list-disc px-20 text-justify leading-7 md:px-36">
+                    <li>Mejora la digestión gracias a la avena.</li>
+                    <li>
+                        Aporte de fibra gracias a la avena y los frutos secos.
+                    </li>
+                    <li>Propiedades antioxidantes de la miel.</li>
+                    <li>
+                        Ayuda a regular los niveles de azúcar en la sangre
+                        gracias a la avena y la miel.
+                    </li>
+                </ul>
+                <MiniSeparation />
+                <h2
+                    class="mt-10 mb-6 text-center font-cursive text-3xl font-bold text-pastel-pink"
+                >
+                    Contenido por barrita:
+                </h2>
+                <ul class="list-disc px-20 text-justify leading-7 md:px-36">
+                    <li>Calorías: 386</li>
+                    <li>Grasas: 13 g</li>
+                    <li>Proteínas: 9 g</li>
+                    <li>Carbohidratos: 60 g (de los cuales 6 g son fibra)</li>
+                    <li>Azúcares: 35,5 g</li>
+                </ul>
+            </div>
+        </div>
+        <section class="mx-auto mt-10 grid place-content-center">
+            <a
+                class="mx-auto rounded-2xl border-2 border-dark bg-white px-3 py-1 text-center font-bold"
+                href="/#productos">Regresar a los productos.</a
+            >
+        </section>
+    </main>
+</Layout>

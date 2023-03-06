@@ -1,0 +1,25 @@
+---
+const INCOGNITE_IMAGE =
+    "https://static.vecteezy.com/system/resources/previews/005/217/482/non_2x/the-question-mark-in-a-circle-black-icon-vector.jpg";
+const { name, image } = Astro.props as {
+    name: string;
+    image: string;
+};
+const [name1, name2, name3, name4] = name.split(" ");
+const firstName = `${name1 ?? ""} ${name2 ?? ""}`;
+const secontName = `${name3 ?? ""} ${name4 ?? ""}`;
+---
+
+<li
+    class="-z-10 mx-auto my-5 w-64 rounded-3xl border-4 border-dark bg-gradient-to-b from-pastel-purple to-pastel-pink p-5 transition hover:shadow-2xl"
+>
+    <h3 class="flex flex-col text-center text-lg font-bold text-white">
+        <span>{firstName}</span>
+        <span>{secontName}</span>
+    </h3>
+    <img
+        class="mx-auto my-2 rounded-full border-4 border-dark object-cover object-center"
+        src={image ?? INCOGNITE_IMAGE}
+        alt={name}
+    />
+</li>

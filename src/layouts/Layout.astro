@@ -1,0 +1,31 @@
+---
+import { SITE_DESCRIPTION } from "../consts";
+import Header from "@/Header.astro";
+import Footer from "@/Footer.astro";
+import Metas from "@/Metas.astro";
+const { title } = Astro.props as {
+    title: string;
+};
+---
+
+<!DOCTYPE html>
+<html
+    class="font-main [scroll-behavior:smooth;] [scroll-padding-top:4rem;]"
+    lang="en"
+>
+    <head>
+        <Metas title={title} description={SITE_DESCRIPTION} />
+    </head>
+    <body class="relative bg-gray">
+        <Header />
+        <main class="h-full py-16 [min-height:calc(100vh-4rem);]">
+            <slot />
+        </main>
+        <Footer />
+        <style is:global>
+            * {
+                box-sizing: border-box;
+            }
+        </style>
+    </body>
+</html>
