@@ -29,19 +29,19 @@ export default function Navegation() {
                 } trans form fixed bottom-0 left-0 flex w-screen flex-col items-center justify-center gap-2 bg-pastel-purple text-center font-bold text-white transition-all [transition-duration:300ms;] [height:calc(100vh-64px)] md:static md:mx-5 md:h-full md:w-auto md:flex-row md:bg-[#ffffff00]`}
             >
                 <li
-                    className="w-40 rounded-3xl border border-dark bg-pastel-purple px-2 py-1 hover:brightness-90"
+                    className="w-40 rounded-3xl border border-dark bg-pastel-purple p-1 hover:brightness-90"
                     onClick={() => setOpen(false)}
                 >
                     <a href="/#home">Inicio</a>
                 </li>
                 <li
-                    className="w-40 rounded-3xl border border-dark bg-pastel-purple px-2 py-1 hover:brightness-90"
+                    className="w-40 rounded-3xl border border-dark bg-pastel-purple p-1 hover:brightness-90"
                     onClick={() => setOpen(false)}
                 >
                     <a href="/#productos">Productos</a>
                 </li>
                 <li
-                    className="w-40 rounded-3xl border border-dark bg-pastel-purple px-2 py-1 hover:brightness-90"
+                    className="w-40 rounded-3xl border border-dark bg-pastel-purple p-1 hover:brightness-90"
                     onClick={() => setOpen(false)}
                 >
                     <a href="/#integrantes">Integrantes</a>
