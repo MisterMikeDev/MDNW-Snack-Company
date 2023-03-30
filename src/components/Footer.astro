@@ -1,4 +1,4 @@
-<footer class="absolute top-full -z-[5] w-full">
+<footer id="footer" class="absolute top-full -z-[5] w-full">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
             fill="rgb(179,158,181)"
@@ -25,3 +25,10 @@
         </h6>
     </section>
 </footer>
+<style>
+    @media print {
+        footer#footer {
+            display: none;
+        }
+    }
+</style>

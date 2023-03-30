@@ -1,0 +1,197 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { SITE_TITLE } from "../consts";
+---
+
+<Layout title={`${SITE_TITLE} | Presentation`}>
+    <header class="flex items-center justify-center gap-4 py-2 font-cursive">
+        <div>
+            <img class="rounded-full" src="/MainLogo.png" alt="Logo" />
+        </div>
+        <div class="grid place-content-center">
+            <h1 class="text-4xl">MDNW Snack Company</h1>
+            <p class="text-2xl">Alimentando tu cuerpo y mente.</p>
+        </div>
+    </header>
+    <article class="mb-1 flex flex-col md:flex-row">
+        <section class="mb-1 md:w-3/5">
+            <section class="h-1/2 px-6">
+                <h3 class="mb-1 text-center font-cursive text-2xl font-bold">
+                    Servicios que ofrecemos
+                </h3>
+                <p class="text-justify">
+                    Somos una empresa que se dedica a vender Snacks nutritivos
+                    los cuales tienes como objetivo darte energia para tus dias
+                    más pesados conservando lo nutritivo de los ingredientes, de
+                    ahí nuestro eslogan
+                    <cite>"Alimentando tu cuerpo y mente"</cite>.
+                </p>
+            </section>
+            <section class="h-1/2 px-6">
+                <h3 class="mb-1 text-center font-cursive text-2xl font-bold">
+                    SnackFit
+                </h3>
+                <p class="text-justify">
+                    SnackFit es nuestro producto estralla, este producto
+                    contiene productos naturales como por ejemplo avena y frutos
+                    secos para la base, y usamos miel como principal endulzante
+                    natural y como forma de unir los otros dos ingredientes.
+                </p>
+            </section>
+        </section>
+        <aside class="px-6 md:w-2/5">
+            <h3 class="text-center font-cursive text-2xl font-bold">
+                Contactanos:
+            </h3>
+            <ul class="font-bold">
+                <li class="[width:fit-content;]">
+                    <a
+                        class="flex items-center gap-1"
+                        href="https://mail.google.com/mail/u/0/?to=mdnwsnackcompany@gmail.com&su=Me%20interesa%20contactar%20con%20ustedes.&body=Vengo%20desde%20su%20carta%20de%20%E2%80%8Bpresentaci%C3%B3n%20y%20me%20interesa%20comprar%20alguno%20de%20su%20extraordinarios%20snacks%20%F0%9F%98%89&fs=1&tf=cm"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="44"
+                            height="44"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            class="icon icon-tabler icon-tabler-at"
+                            viewBox="0 0 24 24"
+                        >
+                            <path stroke="none" d="M0 0h24v24H0z"></path>
+                            <circle cx="12" cy="12" r="4"></circle>
+                            <path
+                                d="M16 12v1.5a2.5 2.5 0 0 0 5 0V12a9 9 0 1 0-5.5 8.28"
+                            ></path>
+                        </svg>
+                        <span> mdnwsnackcompany@gmail.com</span>
+                    </a>
+                </li>
+                <li class="[width:fit-content;]">
+                    <a class="flex items-center gap-1" href="tel:+5520930435">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="44"
+                            height="44"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            class="icon icon-tabler icon-tabler-phone-call"
+                            viewBox="0 0 24 24"
+                        >
+                            <path stroke="none" d="M0 0h24v24H0z"></path>
+                            <path
+                                d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2M15 7a2 2 0 0 1 2 2M15 3a6 6 0 0 1 6 6"
+                            ></path>
+                        </svg>
+                        <span> (+55)-2093-0435</span>
+                    </a>
+                </li>
+                <li class="[width:fit-content;]">
+                    <a
+                        class="flex items-center gap-1"
+                        href="https://goo.gl/maps/siHVfTXc1AA8Xjws9"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="44"
+                            height="44"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            class="icon icon-tabler icon-tabler-map-pin"
+                            viewBox="0 0 24 24"
+                        >
+                            <path stroke="none" d="M0 0h24v24H0z"></path>
+                            <circle cx="12" cy="11" r="3"></circle>
+                            <path
+                                d="M17.657 16.657 13.414 20.9a2 2 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z"
+                            ></path>
+                        </svg>
+                        <span class="text-lg font-bold">
+                            Fransico I. Madero #376, Las Juntas, Puerto
+                            Vallarta, Jalisco, México
+                        </span>
+                    </a>
+                </li>
+                <li class="[width:fit-content;]">
+                    <a
+                        class="flex items-center gap-1"
+                        href="https://mdnw-snack-company.netlify.app"
+                        target="_blank"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="44"
+                            height="44"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            class="icon icon-tabler icon-tabler-browser"
+                            viewBox="0 0 24 24"
+                        >
+                            <path stroke="none" d="M0 0h24v24H0z"></path>
+                            <rect width="16" height="16" x="4" y="4" rx="1"
+                            ></rect>
+                            <path d="M4 8h16M8 4v4"></path>
+                        </svg>
+                        <span class="text-lg font-bold">
+                            MDNW Snack Company
+                        </span>
+                    </a>
+                </li>
+                <li class="[width:fit-content;]">
+                    <a
+                        class="flex items-center gap-1"
+                        href="https://instagram.com/@mdnw_snack_company"
+                        target="_blank"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="44"
+                            height="44"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            class="icon icon-tabler icon-tabler-brand-instagram"
+                            viewBox="0 0 24 24"
+                        >
+                            <path stroke="none" d="M0 0h24v24H0z"></path>
+                            <rect width="16" height="16" x="4" y="4" rx="4"
+                            ></rect>
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M16.5 7.5v.001"></path>
+                        </svg>
+                        <span class="text-lg font-bold">
+                            @mdnw_snack_company
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </article>
+    <footer id="copy" class="text-center text-lg">
+        <small> &copy MDNW Snack Company - 2023</small>
+    </footer>
+</Layout>
+<style>
+    @media print {
+        footer#copy {
+        }
+    }
+</style>
