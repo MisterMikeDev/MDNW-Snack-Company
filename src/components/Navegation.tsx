@@ -4,7 +4,7 @@ export default function Navegation() {
     return (
         <nav className="flex flex-row">
             <button
-                className="static z-[75] pr-10 hover:brightness-90 md:absolute md:-top-96"
+                className="static z-[75] mr-10 hover:brightness-90 md:absolute md:-top-96"
                 onClick={() => setOpen(!open)}
             >
                 <div
@@ -29,22 +29,28 @@ export default function Navegation() {
                 } trans form fixed bottom-0 left-0 flex w-screen flex-col items-center justify-center gap-2 bg-pastel-purple text-center font-bold text-white transition-all [transition-duration:300ms;] [height:calc(100vh-64px)] md:static md:mx-5 md:h-full md:w-auto md:flex-row md:bg-[#ffffff00]`}
             >
                 <li
-                    className="w-40 rounded-3xl border border-dark bg-pastel-purple p-1 hover:brightness-90"
+                    className="w-40 rounded-lg border border-dark bg-pastel-purple py-1 hover:brightness-90 md:w-32"
                     onClick={() => setOpen(false)}
                 >
                     <a href="/#home">Inicio</a>
                 </li>
                 <li
-                    className="w-40 rounded-3xl border border-dark bg-pastel-purple p-1 hover:brightness-90"
+                    className="w-40 rounded-lg border border-dark bg-pastel-purple py-1 hover:brightness-90 md:w-32"
                     onClick={() => setOpen(false)}
                 >
                     <a href="/#productos">Productos</a>
                 </li>
                 <li
-                    className="w-40 rounded-3xl border border-dark bg-pastel-purple p-1 hover:brightness-90"
+                    className="w-40 rounded-lg border border-dark bg-pastel-purple py-1 hover:brightness-90 md:w-32"
                     onClick={() => setOpen(false)}
                 >
                     <a href="/#integrantes">Integrantes</a>
+                </li>
+                <li
+                    className="w-40 rounded-lg border border-dark bg-pastel-purple py-1 hover:brightness-90 md:w-32"
+                    onClick={() => setOpen(false)}
+                >
+                    <a href="/presentation">Presentación</a>
                 </li>
             </ul>
         </nav>
